@@ -20,7 +20,6 @@
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "cy-verify-downloads": "^0.1.11",
     "cypress-commands": "^3.0.0",
-    "cypress-file-upload": "^5.0.8",
     "dayjs": "^1.11.6"
   },
   "cypress-cucumber-preprocessor": {
