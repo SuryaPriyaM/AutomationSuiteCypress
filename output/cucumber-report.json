@@ -1,0 +1,882 @@
+[
+  {
+    "description": "        As a Swag Lab User\n        I want to verify the signin functionality of Swag Lab website for valid and invalid user credentials",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 2553000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website;;2",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Verify the sign in functionality of the swag website",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user logs into Swag website with \"LoggableUser\" login \"standard_user\"",
+            "result": {
+              "duration": 1213000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user lands on \"Swag Labs\" screen",
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 10,
+            "name": "@Functional"
+          },
+          {
+            "line": 10,
+            "name": "@Item_ID_01_01"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 298000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website;;3",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Verify the sign in functionality of the swag website",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user logs into Swag website with \"LoggableUser\" login \"problem_user\"",
+            "result": {
+              "duration": 886000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user lands on \"Swag Labs\" screen",
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 10,
+            "name": "@Functional"
+          },
+          {
+            "line": 10,
+            "name": "@Item_ID_01_01"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 389000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website;;4",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Verify the sign in functionality of the swag website",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user logs into Swag website with \"LoggableUser\" login \"performance_glitch_user\"",
+            "result": {
+              "duration": 6182000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user lands on \"Swag Labs\" screen",
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 10,
+            "name": "@Functional"
+          },
+          {
+            "line": 10,
+            "name": "@Item_ID_01_01"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 210000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website;;5",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Verify the sign in functionality of the swag website",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user logs into Swag website with \"LoggableUser\" login \"visual_user\"",
+            "result": {
+              "duration": 926000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user lands on \"Swag Labs\" screen",
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 10,
+            "name": "@Functional"
+          },
+          {
+            "line": 10,
+            "name": "@Item_ID_01_01"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website;;6",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "Verify the sign in functionality of the swag website",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user logs into Swag website with \"LoggableUser\" login \"performance_glitch_user\"",
+            "result": {
+              "duration": 6196000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user lands on \"Swag Labs\" screen",
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 10,
+            "name": "@Functional"
+          },
+          {
+            "line": 10,
+            "name": "@Item_ID_01_01"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website;;7",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Verify the sign in functionality of the swag website",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 13,
+            "name": "user logs into Swag website with \"LoggableUser\" login \"error_user\"",
+            "result": {
+              "duration": 1049000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user lands on \"Swag Labs\" screen",
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 10,
+            "name": "@Functional"
+          },
+          {
+            "line": 10,
+            "name": "@Item_ID_01_01"
+          }
+        ]
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 7,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 8,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "verify-the-signin-functionality-of-swag-lab-website;verify-the-sign-in-functionality-of-the-swag-website-for-locked-out-user-credentials",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Verify the sign in functionality of the swag website for Locked out user credentials",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 28,
+            "name": "user logs into Swag website with \"LockedUser\" login",
+            "result": {
+              "duration": 884000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username"
+                ]
+              },
+              {
+                "cells": [
+                  "locked_out_user"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "Then ",
+            "line": 31,
+            "name": "user lands on error screen",
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_01"
+          },
+          {
+            "line": 25,
+            "name": "@Functional"
+          },
+          {
+            "line": 25,
+            "name": "@Item_ID_01_02"
+          }
+        ]
+      }
+    ],
+    "id": "verify-the-signin-functionality-of-swag-lab-website",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Verify the signin functionality of Swag Lab website",
+    "uri": "cypress\\e2e\\features\\Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Functional"
+      },
+      {
+        "line": 1,
+        "name": "@Item_ID_01"
+      }
+    ]
+  },
+  {
+    "description": "        As a Swag Lab Standard user\n        I want to create a new order with an Standard user login adding multiple products to the cart\n        Verify the checkout process Checkout overview quantity Payment Information Price Total and Total price\n        and Checkout Complete message on successful order creation",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 9,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 10,
+            "name": "user launches the Swag Labs Application",
+            "result": {
+              "duration": 438000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "creating-a-new-order-adding-products-to-the-cart-with-a-standard-user-login;new-order-creation-and-validation-using-a-standard-user-login",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "New Order creation and validation using a Standard user login",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 16,
+            "name": "user logs into Swag website with \"StandardUser\" login",
+            "result": {
+              "duration": 960000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username"
+                ]
+              },
+              {
+                "cells": [
+                  "standard_user"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "When ",
+            "line": 19,
+            "name": "user lands on \"Products\" screen",
+            "result": {
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 20,
+            "name": "user searches \"Sauce Labs Bike Light\" item",
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 21,
+            "name": "user validates the item description",
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 22,
+            "name": "user verifies the unit equivalent price",
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 23,
+            "name": "verify the image of \"Sauce Labs Bike Light\" item",
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user clicks on \"Add to cart\" button",
+            "result": {
+              "duration": 221000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 25,
+            "name": "user clicks on shopping cart link",
+            "result": {
+              "duration": 288000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 26,
+            "name": "user lands on \"Your Cart\" screen",
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 27,
+            "name": "user captures the Quantity of \"Sauce Labs Bike Light\" item",
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 28,
+            "name": "user clicks on \"Checkout\" button",
+            "result": {
+              "duration": 297000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "When ",
+            "line": 29,
+            "name": "user enters the Personal information details \"First Name\" and \"Last Name\" and \"Zip/Postal Code\"",
+            "result": {
+              "duration": 1198000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "postalcode"
+                ]
+              },
+              {
+                "cells": [
+                  "Priya",
+                  "Kumar",
+                  "BD37BU"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 32,
+            "name": "clicks on continue button",
+            "result": {
+              "duration": 368000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 33,
+            "name": "user lands on \"Checkout: Overview\" screen",
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 34,
+            "name": "user verifies the Payment Shipping Information",
+            "result": {
+              "duration": 317000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 35,
+            "name": "user validates the Price Total with Tax",
+            "result": {
+              "duration": 324000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 36,
+            "name": "user clicks on \"Finish\" button",
+            "result": {
+              "duration": 423000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 37,
+            "name": "user lands on \"Checkout: Complete!\" screen",
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 38,
+            "name": "user verifies the \"Thank you for your order!\" message",
+            "result": {
+              "duration": 131000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 39,
+            "name": "user clicks on \"Back Home\" button",
+            "result": {
+              "duration": 430000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Functional"
+          },
+          {
+            "line": 1,
+            "name": "@Item_ID_02"
+          },
+          {
+            "line": 12,
+            "name": "@Functional"
+          },
+          {
+            "line": 12,
+            "name": "@Item_ID_3421429829_01"
+          }
+        ]
+      }
+    ],
+    "id": "creating-a-new-order-adding-products-to-the-cart-with-a-standard-user-login",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Creating a new order adding products to the cart with a Standard user login",
+    "uri": "cypress\\e2e\\features\\Orderflow.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Functional"
+      },
+      {
+        "line": 1,
+        "name": "@Item_ID_02"
+      }
+    ]
+  }
+]
