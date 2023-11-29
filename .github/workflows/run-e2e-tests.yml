@@ -42,4 +42,4 @@ jobs:
           name: static-site
 
       - name: Test artifact download
-        run: ls -R 
+        run: ls -R .  # Replace with the correct path you want to list
