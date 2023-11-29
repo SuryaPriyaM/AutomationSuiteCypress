@@ -1,9 +1,11 @@
 name: E2E
 on: push
 jobs:
-  test:
+  
+  build-project:
+    name: Build project
     runs-on: ubuntu-22.04
-            
+  
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -13,6 +15,11 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         
+      - name: Upload static site content
+        uses: actions/upload-artifact@v2
+        with:
+          name: static-site
+          path: .next/
           # we have already installed all dependencies above
           # install: false
           # Cypress tests and config file are in "e2e" folder
@@ -33,3 +40,16 @@ jobs:
         with:
           name: cypress-videos
           path: cypress/videos
+        
+  release-project:
+    name: Release project
+    runs-on: ubuntu-22.04
+    needs: build-project
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: static-site
+    
+      - name: Test artifact download
+        run: ls -R
