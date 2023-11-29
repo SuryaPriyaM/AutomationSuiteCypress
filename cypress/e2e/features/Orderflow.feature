@@ -1,4 +1,3 @@
-@Functional @Item_ID_02
 Feature: Creating a new order adding products to the cart with a Standard user login
 
         As a Swag Lab Standard user
@@ -9,7 +8,6 @@ Feature: Creating a new order adding products to the cart with a Standard user l
         Background:
                 Given user launches the Swag Labs Application
 
-        @Functional  @Item_ID_3421429829_01
         Scenario: New Order creation and validation using a Standard user login
         #SCENARIO_01
                 #NEW_ORDERCREATION:Validate the New order creation with all the segments.
@@ -36,12 +34,4 @@ Feature: Creating a new order adding products to the cart with a Standard user l
                 And  user clicks on "Finish" button
                 Then user lands on "Checkout: Complete!" screen
                 And  user verifies the "Thank you for your order!" message
-                Then user clicks on "Back Home" button
-                 
-                
-                 
-                # When user selects "Domestic" in "tripType" radio button
-                # And  user selects "Flights" in "travelType" checkbox
-                # And  user enters "1" in "No. of travellers" text field
-                # And  user clicks on "Start" button
-                # Then user lands on "Travel Requirements" screen
+                Then user clicks on "Back Home" button              

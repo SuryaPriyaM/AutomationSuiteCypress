@@ -1,23 +1,29 @@
-const { defineConfig } = require("cypress");
-//For Cucumber Integration
-const createEsbuildPlugin =
-  require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin
+const { defineConfig } = require('cypress');
+const createEsbuildPlugin =  require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin
 const createBundler = require('@bahmutov/cypress-esbuild-preprocessor')
-const nodePolyfills =
-  require('@esbuild-plugins/node-modules-polyfill').NodeModulesPolyfillPlugin
-const addCucumberPreprocessorPlugin =
-  require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin
-const {verifyDownloadsTasks} = require('cy-verify-downloads')
-  
-module.exports = defineConfig({
-     e2e: {
-      experimentalRunAllSpecs: true,
+const nodePolyfills =  require('@esbuild-plugins/node-modules-polyfill').NodeModulesPolyfillPlugin
+
+//For Cucumber Integration
+const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
+const browserify = require("@badeball/cypress-cucumber-preprocessor/browserify");
+
+async function setupNodeEvents(on, config) {
+  await preprocessor.addCucumberPreprocessorPlugin(on, config);
+
+  on(
+    'file:preprocessor',
+    createBundler({
+      plugins: [nodePolyfills(), createEsbuildPlugin(config)],
+    })
+  )
+  return config
+}
+
+module.exports = defineConfig({  
+  e2e:{
       async setupNodeEvents(on, config) 
       {
-     //downloading a file 
-      on('task', {verifyDownloadsTasks})
-
-      //reusing the data in between diiferent js files
+           //reusing the data in between diiferent js files
       const data ={}
       
       on('task',{
@@ -31,18 +37,10 @@ module.exports = defineConfig({
           return data['Trip_request_id'] || x
         }
       })
-            // implement node event listeners here
-      await addCucumberPreprocessorPlugin(on, config) // to allow json to be produced
-      // To use esBuild for the bundler when preprocessing
-      on(
-        'file:preprocessor',
-        createBundler({
-          plugins: [nodePolyfills(), createEsbuildPlugin(config)],
-        })
-      )
-      return config
-    },
+      },
+    setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
+    experimentalRunAllSpecs: true,
     watchForFileChanges :false,
     chromeWebSecurity :false,
     viewportHeight:750,
