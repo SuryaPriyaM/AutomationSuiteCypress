@@ -1,46 +1,36 @@
 name: E2E
 on: push
 jobs:
-  
   build-project:
     name: Build project
     runs-on: ubuntu-22.04
-  
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-         #Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-          # runTests: false
+
       - name: Cypress run
         uses: cypress-io/github-action@v6
-        
+
       - name: Upload static site content
         uses: actions/upload-artifact@v2
         with:
           name: static-site
           path: .next/
-          # we have already installed all dependencies above
-          # install: false
-          # Cypress tests and config file are in "e2e" folder
-         
-      
-      # Upload screenshots on failure
+
       - name: Upload screenshots
         uses: actions/upload-artifact@v2
-        if: failure()  # This step always runs
+        if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
-      # Upload videos
       - name: Upload videos
         uses: actions/upload-artifact@v2
-        if: always()  # This step always runs
+        if: always()
         with:
           name: cypress-videos
           path: cypress/videos
-        
+
   release-project:
     name: Release project
     runs-on: ubuntu-22.04
@@ -50,6 +40,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: static-site
-    
+
       - name: Test artifact download
-        run: ls -R
+        run: ls -R 
