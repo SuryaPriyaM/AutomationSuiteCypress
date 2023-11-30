@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:report" :"node C:/Users/91701/CypressTestAutomation/generate-cucumber-html-report.js"
+    "test": "cypress run",
+    "report": "node ./generate-cucumber-html-report.js"
   },
   "keywords": [],
   "author": "",
