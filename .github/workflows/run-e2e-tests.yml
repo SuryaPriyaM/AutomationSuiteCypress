@@ -1,45 +1,23 @@
 name: E2E
 on: push
 jobs:
-  build-project:
-    name: Build project
-    runs-on: ubuntu-22.04
+  your-job-name:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14  # or specify the Node.js version you need
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
+    - name: Install Dependencies
+      run: npm ci
 
-      - name: Upload static site content
-        uses: actions/upload-artifact@v2
-        with:
-          name: static-site
-          path: .next/
+    - name: Build (if present)
+      run: npm run build --if-present
 
-      - name: Upload screenshots
-        uses: actions/upload-artifact@v2
-        if: failure()
-        with:
-          name: cypress-screenshots
-          path: cypress/screenshots
-
-      - name: Upload videos
-        uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: cypress-videos
-          path: cypress/videos
-
-  release-project:
-    name: Release project
-    runs-on: ubuntu-22.04
-    needs: build-project
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: static-site
-
-      - name: Test artifact download
-        run: ls -R .  # Replace with the correct path you want to list
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Build
+        path: dist
