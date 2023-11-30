@@ -33,11 +33,3 @@ jobs:
         with:
           name: cypress-videos
           path: cypress/videos
-
-      - name: Generate report
-        run:  cd /home/runner/work/AutomationSuiteCypress/AutomationSuiteCypress && npm run cy:report
-      - name: Upload report
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-cucumber-report
-          path: CypressTestAutomation/cypress/cucumber-report/
