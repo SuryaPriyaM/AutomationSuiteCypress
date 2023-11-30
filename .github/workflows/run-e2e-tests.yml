@@ -1,21 +1,35 @@
 name: E2E
 on: push
 jobs:
-  cypress-run:
-    runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-22.04
+            
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
+        uses: actions/checkout@v4
+         #Install npm dependencies, cache them correctly
       # and run all Cypress tests
+          # runTests: false
       - name: Cypress run
-        uses: cypress-io/github-action@v4 # use the explicit version number
-        with:
-          command: npm run ui-regression
-      - name: Uploading artifact
+        uses: cypress-io/github-action@v6
+        
+          # we have already installed all dependencies above
+          # install: false
+          # Cypress tests and config file are in "e2e" folder
+         
+      
+      # Upload screenshots on failure
+      - name: Upload screenshots
         uses: actions/upload-artifact@v2
-        if: always()
+        if: failure()  # This step always runs
         with:
-          name: cypress-execution-report
-          path: cypress/reports/html
-          retention-days: 30
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      # Upload videos
+      - name: Upload videos
+        uses: actions/upload-artifact@v2
+        if: always()  # This step always runs
+        with:
+          name: cypress-videos
+          path: cypress/videos
