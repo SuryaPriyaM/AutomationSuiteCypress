@@ -1,23 +1,21 @@
 name: E2E
 on: push
 jobs:
-  your-job-name:
+  cypress-run:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Use Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 14  # or specify the Node.js version you need
-
-    - name: Install Dependencies
-      run: npm ci
-
-    - name: Build (if present)
-      run: npm run build --if-present
-
-    - name: Upload Build Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: Build
-        path: dist
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Install NPM dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v4 # use the explicit version number
+        with:
+          command: npm run ui-regression
+      - name: Uploading artifact
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-execution-report
+          path: cypress/reports/html
+          retention-days: 30
