@@ -35,7 +35,7 @@ jobs:
           path: cypress/videos
 
       - name: Generate report
-        run:  cd CypressTestAutomation && npm run cy:report
+        run:  cd AutomationSuiteCypress && npm run cy:report
       - name: Upload report
         uses: actions/upload-artifact@v2
         with:
