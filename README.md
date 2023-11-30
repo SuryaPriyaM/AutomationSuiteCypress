@@ -27,7 +27,7 @@ Clone the repo
 --------------------------------------------------------------------------------------------------------------
 In order to get the code and install NPM dependencies, first clone my repo to your local machine.
 
-git clonehttps://github.com/SuryaPriyaM/AutomationSuiteCypress.git
+git clone https://github.com/SuryaPriyaM/AutomationSuiteCypress.git
 
 Cloning into ...
 

@@ -34,9 +34,10 @@ Cypress.Commands.add('login', (role,username) => {
 })
 
 Cypress.Commands.add('dropDown', (fieldName, fieldValue) => {
-    switch (fieldName) {
-        case "":
-            break;     
+    switch (fieldName) {                 
+       case "Name (A to Z)":
+                cy.get('.product_sort_container').select(fieldValue)
+                break;
         default:
             console.log('Please provide a valid fieldName and fieldValue')
             break;

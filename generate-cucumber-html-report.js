@@ -11,14 +11,14 @@ report.generate({
     device: "Local test machine",
     platform: {
       name: "Windows",
-      version: "7",
+      version: "10",
     },
     customData: {
       title: "CyPress Automation Report",
       data: [
         { label: "Project", value: "Cypress Project" },
         { label: "Release", value: "1.0.0" },
-        { label: "Execution Date", value: "November 28, 2023" }
+        { label: "Execution Date", value: "November 30, 2023" }
       ]
     }
   },

@@ -24,8 +24,8 @@ Then('user clicks on shopping cart link', () => {
   cy.get('.shopping_cart_link').should('be.visible').click()
 })
 
-Then('user captures the Quantity of {string} item', () => {
-  cy.get('.cart_item').contains('Sauce Labs Bike Light').parents().find('.cart_item').children('.cart_quantity').invoke('text')
+Then('user captures the Quantity of {string} item', (productname) => {
+  cy.get('.cart_item').contains(productname).parents().find('.cart_item').children('.cart_quantity').invoke('text')
     .then((text) => {
       cy.log(text)
     })
@@ -70,3 +70,44 @@ Then('user validates the Price Total with Tax', () => {
   })
 })
 
+Then("user searches item {string}",function(productname){
+      cy.searchItem(productname)
+})
+
+Then('user adds multiple item',function (table) {
+  table.hashes().forEach(row => {
+   cy.get('.inventory_item_name', { timeout: 100000 })
+     .should('be.visible')
+     .contains(row.productname)
+     .parents('.inventory_item_label').siblings('.pricebar').find('button')
+     .click();
+
+  })
+})
+
+Then("user validates the shopping cart badge", () => {
+  cy.get('.shopping_cart_badge').invoke('text').then((text) => {
+    cy.log(text)
+  })
+})
+
+Then('user verifies the order successful icon', () => {
+  cy.get('img[alt="Pony Express"]').should('exist')
+    
+})
+
+Then('user verifies the menu item list',function (table) {
+  table.hashes().forEach(row => {
+  cy.get('.bm-item-list').contains(row.menu_item_list)
+  })
+})
+
+Then('user clicks on logout link', () => {
+  cy.get('#logout_sidebar_link').click()
+    
+})
+
+Then('user gets logged out successfully', () => {
+  cy.get('.login_logo').contains('Swag Labs')
+    
+})

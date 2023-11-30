@@ -7,7 +7,7 @@ Feature: Verify the signin functionality of Swag Lab website
                 Given user launches the Swag Labs Application
 
         Scenario Outline: Verify the sign in functionality of the swag website
-
+        #SCENARIO_01
         Given user logs into Swag website with "LoggableUser" login "<username>"           
         Then user lands on "Swag Labs" screen
         
@@ -21,7 +21,7 @@ Feature: Verify the signin functionality of Swag Lab website
             | error_user             |
 
         Scenario: Verify the sign in functionality of the swag website for Locked out user credentials
-                       
+        #SCENARIO_02              
         Given user logs into Swag website with "LockedUser" login
         | username               |
         | locked_out_user        |

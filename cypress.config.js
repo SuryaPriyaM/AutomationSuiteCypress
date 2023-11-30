@@ -23,20 +23,7 @@ module.exports = defineConfig({
   e2e:{
       async setupNodeEvents(on, config) 
       {
-           //reusing the data in between diiferent js files
-      const data ={}
-      
-      on('task',{
-        save(x){
-          console.log('Trip_request_id',x)
-         data['Trip_request_id']= x
-         return null
-        },
-        load(){
-          console.log('returning',data.Trip_request_id)
-          return data['Trip_request_id'] || x
-        }
-      })
+          
       },
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
